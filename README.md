@@ -1,33 +1,63 @@
-# Peixos · Circle packing taxonòmic
+# Peixos a la taxonomia
 
-Visualització interactiva de la taxonomia de peixos basada en D3.js.
+**Una visualització interactiva de la diversitat taxonòmica dels organismes que anomenem «peixos».**
 
-## Estructura
+> **Els peixos no existeixen.** Almenys, no com a grup taxonòmic natural (monofilètic).
 
-- `index.html`: estructura de la pàgina.
-- `css/styles.css`: estils.
-- `js/main.js`: visualització, jerarquia, zoom i consulta d'imatges.
-- `js/data.js`: dades incorporades que utilitza l'aplicació en executar-se.
+Aquest projecte explora aquesta idea mitjançant una visualització *circle packing* construïda amb [D3.js](https://d3js.org/). Els cercles representen grups taxonòmics niats: els grups més grans contenen els seus subgrups, i aquests, al seu torn, contenen grups més específics. La visualització permet explorar com s'organitza aquesta diversitat i veure el pes que tenen els teleostis dins dels registres analitzats.
+
+## La visualització
+
+![Vista general de Peixos a la taxonomia](screenshots/peixos-vista-general.png)
+
+La visualització és interactiva: pots apropar-te a un grup, tornar a la vista general i canviar la variable representada amb el selector.
+
+- **Espècies:** la mida dels cercles reflecteix el nombre d'espècies representades en cada grup.
+- **Observacions:** la mida reflecteix el nombre de registres d'observació associats a cada grup.
+- **Zoom i navegació:** selecciona o apropa't als cercles per explorar nivells taxonòmics més detallats.
+
+![Vista de la visualització amb el selector d'observacions](screenshots/peixos-vista-visualitzacio.png)
+
+## Què vol dir «observació»?
+
+Les dades provenen de l'[Ocean Biodiversity Information System (OBIS)](https://obis.org/), una infraestructura internacional que reuneix registres de biodiversitat marina de múltiples fonts.
+
+En aquesta visualització, una **observació és un registre de presència d'un organisme**, no necessàriament un individu únic ni una menció en un article científic. Els registres poden procedir de conjunts de dades i programes de mostreig diferents.
+
+Per tant, un nombre més elevat d'observacions indica que un grup està més representat en les dades disponibles; **no demostra, per si sol, que sigui més abundant al mar**. La representació també depèn de l'esforç de mostreig, la cobertura geogràfica i temporal, la identificació taxonòmica i la disponibilitat de dades.
+
+## Dades i abast
+
+El conjunt processat per al projecte conté:
+
+- **56.687 registres d'observació**.
+- **560 rutes taxonòmiques**.
+- **51 ordres**.
+- Tres classes principals representades en les dades: *Teleostei*, *Elasmobranchii* i *Holocephali*.
+
+Les xifres descriuen el conjunt de dades utilitzat per generar aquesta visualització, no un cens complet de tots els peixos del planeta. La classificació i els registres depenen de les dades disponibles a OBIS i de les decisions de tractament aplicades per preparar el fitxer.
+
+## Font i citació
+
+**Font de les dades:** Ocean Biodiversity Information System (OBIS), Intergovernmental Oceanographic Commission of UNESCO. Consulta de les dades: 25 d'octubre de 2026.
+
+> Ocean Biodiversity Information System (OBIS). *Ocean Biodiversity Information System*. Intergovernmental Oceanographic Commission of UNESCO. https://obis.org/. Consulta: 25 d'octubre de 2026.
+
+Aquesta referència general no substitueix les citacions dels conjunts de dades d'origen. El paquet de descàrrega d'OBIS inclou `citations.html`, que recull les referències, els identificadors i les llicències dels conjunts que poden haver contribuït als registres. Les condicions de reutilització s'han de comprovar per a cada conjunt de dades; no s'ha confirmat una única llicència aplicable a tots els registres de la visualització.
+
+Les fotografies d'espècies es consulten en línia des de fonts com Wikipedia/Wikimedia Commons. La disponibilitat d'imatges depèn de la connexió i dels recursos disponibles per a cada tàxon.
+
+## Estructura del projecte
+
+- `index.html`: estructura principal de la pàgina.
+- `css/styles.css`: estils i disseny adaptable.
+- `js/main.js`: visualització, jerarquia, interacció i zoom.
+- `js/data.js`: dades incorporades que l'aplicació utilitza en executar-se.
 - `js/info.js`: botons i panells informatius.
-- `data/peces.csv`: còpia del CSV original per consultar-lo o reutilitzar-lo.
-- `data/descriptions.json`: còpia de les descripcions taxonòmiques.
+- `data/peces.csv`: còpia del CSV per consultar-lo o reutilitzar-lo.
+- `data/descriptions.json`: descripcions taxonòmiques.
+- `screenshots/`: captures de pantalla que es mostren en aquest README.
 
-## Provar al Windows
+## Autoria
 
-1. Descomprimeix tota la carpeta.
-2. Fes doble clic a `INICIAR_LOCAL.bat`.
-3. Mantén oberta la finestra del servidor mentre facis servir la pàgina.
-4. S'obrirà `http://127.0.0.1:8765/`.
-
-Cal tenir Python instal·lat (el llançador `py` o l'ordre `python`). També cal connexió a internet per carregar D3.js i consultar fotografies a Wikipedia/Wikimedia Commons.
-
-La visualització no fa `fetch()` dels fitxers CSV/JSON en temps d'execució: les dades necessàries estan incloses a `js/data.js`. Això evita els errors CORS en obrir `index.html` directament i manté `data/peces.csv` i `data/descriptions.json` disponibles com a fitxers de dades separats.
-
-## Publicar amb GitHub Pages
-
-1. Puja el contingut d'aquesta carpeta al nivell arrel del repositori (on queda `index.html`).
-2. A GitHub, ves a **Settings → Pages**.
-3. Selecciona **Deploy from a branch**, la branca `main` i la carpeta `/ (root)`.
-4. Desa i espera que GitHub Pages indiqui l'URL publicada.
-
-D3.js i les fotografies es carreguen des d'internet; no cal executar un servidor propi després de publicar la web.
+**Autora:** Aitana Tomás San Martín.

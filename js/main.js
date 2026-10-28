@@ -532,7 +532,8 @@ function applyNodeOffsets(){
    }
    // A la vista general, mou una mica cap a la dreta el clade vermell i tots els seus descendents.
    const inChondrichthyes = n.ancestors().some(a=>a.data && a.data.name==="Chondrichthyes");
-   const overviewShift = (focus===root && inChondrichthyes) ? width*0.05 : 0;
+   // Desplaçament lleu cap a l’esquerra per equilibrar el clade vermell en la vista general.
+   const overviewShift = (focus===root && inChondrichthyes) ? width*0.04 : 0;
    const q=activeDisplayGeometry.get(n)||n;
    return `translate(${width/2+(q.x-view[0])*k+ox+overviewShift},${height/2+(q.y-view[1])*k+oy})`;
  }
