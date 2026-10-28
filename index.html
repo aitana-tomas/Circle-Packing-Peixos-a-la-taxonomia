@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ca">
+<!--
+  PEIXOS · ATLES TAXONÒMIC INTERACTIU
+  -----------------------------------
+  Document HTML autocontingut: incorpora les dades tabulars i les descripcions
+  taxonòmiques, i utilitza D3.js per dibuixar la jerarquia de cercles.
+
+  Blocs principals:
+    - CSS: aparença, etiquetes, finestres i adaptació a pantalles petites.
+    - HTML: controls, visualització SVG i contingut informatiu.
+    - JavaScript: validació de dades, jerarquia, dibuix, zoom i fotografies.
+
+  Dependència externa: D3.js es carrega des d'un CDN. Les imatges es consulten
+  a Wikipedia/Wikimedia Commons i, per tant, necessiten connexió a internet.
+  Els comentaris documenten la intenció del codi sense modificar-ne la lògica.
+-->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peixos · Circle packing taxonòmic</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!--
+  ESTRUCTURA DE LA PÁGINA
+  1. Cabecera editorial y breve explicación del proyecto.
+  2. Área SVG interactiva con controles de zoom y navegación.
+  3. Paneles inferiores con metodología, fuentes y limitaciones.
+  4. Ventanas auxiliares para comparar imágenes o consultar una especie.
+-->
+<!-- Título y breve introducción de la visualización. -->
+<header>
+ <div class="intro">
+  <h1>peixos</h1>
+  <p class="sub">Els peixos no existeixen. Almenys no com a grup taxonòmic real (monofilètic), sinó com una etiqueta descriptiva. Per visualitzar clarament aquesta xarxa evolutiva, aquest <em>circle packing</em> representa les proporcions i els clades dels organismes que anomenem «peixos» i destaca el pes enorme dels teleostis.</p>
+ </div>
+</header>
+<main>
+ <section class="stats" aria-label="Estadísticas generales">
+  <div class="stat"><div class="label">Observaciones</div><div class="value" id="statObs">—</div><div class="note">Suma del campo «observaciones»</div></div>
+  <div class="stat"><div class="label">Taxones terminales</div><div class="value" id="statSpecies">—</div><div class="note">Filas taxonómicas del CSV</div></div>
+  <div class="stat"><div class="label">Clases</div><div class="value" id="statClasses">—</div><div class="note">Presentes en el archivo cargado</div></div>
+  <div class="stat"><div class="label">Órdenes</div><div class="value" id="statOrders">—</div><div class="note">Categorías de orden distintas</div></div>
+ </section>
+ <div class="toolbar" aria-hidden="true" style="display:none!important">
+  <div class="crumb" id="breadcrumb">Vista general</div>
+  <input id="csvFile" type="file" accept=".csv,text/csv" aria-label="Seleccionar archivo CSV">
+ </div>
+ <!-- Área principal: visualización interactiva y elementos auxiliares. -->
+  <div class="layout">
+  <section class="viz-card">
+   <div class="viz-top"><h2 id="vizTitle">Mapa de biodiversidad</h2><div class="minimal-controls">
+<button id="backBtn" type="button" title="Torna al nivell anterior" aria-label="Torna al nivell anterior">←</button>
+<button id="resetBtn" type="button" title="Vista general" aria-label="Vista general">⌂</button>
+<button id="zoomInBtn" type="button" title="Apropar zoom" aria-label="Apropar zoom">＋</button>
+<button id="zoomOutBtn" type="button" title="Allunyar zoom" aria-label="Allunyar zoom">−</button>
+<select id="sizeMetric" title="Variable de mida" aria-label="Variable de mida"><option value="species">Espècies</option><option value="observations">Observacions</option></select>
+<button id="motionToggle" type="button" aria-pressed="true" title="Atura o reprèn el moviment" aria-label="Atura o reprèn el moviment">Atura el moviment</button>
+</div></div>
+   <div id="cladeDescription" aria-live="polite" aria-hidden="true"><div id="cladeDescriptionTitle" class="clade-description-title"></div><p id="cladeDescriptionText" class="clade-description-text"></p></div>
+   <svg id="viz" role="img" aria-label="Circle packing interactiu dels tàxons de peixos"><text class="empty" x="50%" y="50%">Preparant la visualització…</text></svg>
+  </section>
+  <aside class="side" aria-label="Detalles del taxón">
+   <section class="side-card">
+    <h2>Ficha del taxón</h2><div id="detailLevel" class="taxon-level">Vista general</div>
+    <div id="detailName" class="taxon-name">Todos los registros</div>
+    <div id="detailCount" class="taxon-count">—</div>
+    <div class="side-label">Porcentaje del total (métrica elegida)</div><div class="side-value" id="detailPct">100 %</div><div class="bar"><span id="detailBar" style="width:100%"></span></div>
+    <div class="side-label">Observaciones registradas en este taxón</div><div class="side-value" id="detailObs">—</div>
+    <div class="side-label">Especies contenidas</div><div class="side-value" id="detailSpecies">—</div>
+    <div class="side-label">Nivel jerárquico</div><div class="side-value" id="detailPath">Todos los taxones</div>
+    <div class="side-label">Subgrupos directos</div><div class="side-value" id="detailChildren">—</div>
+    <button id="comparePhotosBtn" type="button" hidden>Comparar fotografías de las especies</button>
+   </section>
+   <section class="side-card">
+    <h2>Clases y escalas de color</h2><div id="legend" class="legend"></div>
+    <p class="hint" style="margin:12px 0 0">El color representa la jerarquía: Osteichthyes sigue un degradado de azul a verde y Chondrichthyes de rojo a amarillo. Los tonos se aclaran al descender hacia los subgrupos y las especies.</p>
+   </section>
+   <section class="side-card">
+    <h2>Cómo leerlo</h2>
+    <p class="hint">Cada círculo contiene sus descendientes. Los círculos grandes reúnen más observaciones; al entrar en un grupo se recalcula la vista para mostrar mejor sus subdivisiones.</p>
+    <p class="hint">Los nombres aparecen cuando hay espacio suficiente. Selecciona cualquier círculo para consultar su recuento exacto.</p>
+   </section>
+  </aside>
+ </div>
+ <!-- Información metodológica y créditos de la autora. -->
+  <section class="info-accordions" aria-label="Informació sobre la visualització">
+  <div class="info-buttons" role="group" aria-label="Apartats informatius">
+   <button class="info-button" type="button" data-info="variable" aria-label="Visualització" aria-expanded="false" title="Visualització">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="15" r="4"/><circle cx="16.5" cy="8" r="5.5"/></svg>
+   </button>
+   <button class="info-button" type="button" data-info="limits" aria-label="Limitacions" aria-expanded="false" title="Limitacions">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 22 21H2Z"/><path d="M12 9v5M12 17.5v.2"/></svg>
+   </button>
+   <button class="info-button" type="button" data-info="source" aria-label="Font de les dades" aria-expanded="false" title="Font de les dades">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4V21H6Z"/><path d="M14 3.5V8h4M9 12h6M9 16h6"/></svg>
+   </button>
+   <button class="info-button" type="button" data-info="prep" aria-label="Fitxer original i tractament de les dades" aria-expanded="false" title="Fitxer original i tractament de les dades">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/><circle cx="8" cy="5" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="10" cy="19" r="2"/></svg>
+   </button>
+  </div>
+  <div class="info-panel" id="infoPanel" hidden>
+   <div class="info-content" data-panel="variable"><strong>Visualització</strong><p>Explora la classificació taxonòmica dels peixos des dels grups més amplis fins als tàxons més específics. La mida dels cercles pot representar el nombre de registres d’ocurrència o el nombre d’espècies, segons l’opció seleccionada damunt de la visualització. Fes clic en els cercles per aprofundir en la jerarquia. Quan hi ha fotografies disponibles, es mostren dins dels cercles de les espècies; en fer-hi clic, pots obrir la pàgina de Wikipedia o Wikimedia Commons d’on provenen. Les descripcions dels tàxons també s’han elaborat a partir de Wikipedia.</p></div>
+   <div class="info-content" data-panel="limits" hidden><strong>Limitacions i interpretació de les observacions</strong><p>Les observacions són registres d’ocurrència presents a la descàrrega d’OBIS, no necessàriament individus. Per tant, els cercles mostren quants registres s’han associat a cada tàxon, no l’abundància real de peixos al mar. Els recomptes també depenen de l’esforç de mostreig, de la cobertura geogràfica i temporal, dels mètodes utilitzats i de la disponibilitat de dades. Els registres amb identificació taxonòmica incompleta poden quedar representats sota «Sin dato» o al nivell taxonòmic conegut; no s’han d’interpretar com a espècies identificades. La visualització serveix per explorar la composició dels registres disponibles, no per comparar directament la mida real de les poblacions.</p></div>
+   <div class="info-content" data-panel="source" hidden><strong>Font de les dades i dels continguts</strong><p><b>Dades de biodiversitat:</b> <a href="https://obis.org/" target="_blank" rel="noopener noreferrer">Ocean Biodiversity Information System (OBIS)</a>, una infraestructura que reuneix registres aportats per múltiples projectes, institucions i proveïdors de dades.</p><p><b>Referències dels conjunts de dades:</b> el paquet de descàrrega incloïa <code>citations.html</code>, amb les citacions i els identificadors dels conjunts d’origen. </p></div>
+   <div class="info-content" data-panel="prep" hidden><strong>Fitxer original i tractament de les dades</strong><p><b>Fitxer original:</b> <code>Occurrence.tsv</code>, una taula de registres d’OBIS. Per preparar la visualització es van llegir les dades per blocs, es van seleccionar els camps taxonòmics <code>class</code>, <code>order</code>, <code>family</code>, <code>genus</code> i <code>species</code>, i es van conservar els registres de les classes <i>Teleostei</i>, <i>Elasmobranchii</i> i <i>Holocephali</i>.</p><p>Els valors taxonòmics buits es van normalitzar com a «Sin dato» en el CSV de treball. Després, els registres es van agrupar per ruta taxonòmica i es va comptar el nombre de files de cada grup per crear el CSV taxonòmic <code>peces_circle_packing.csv</code>, distribuït dins del projecte com a <code>data/peces.csv</code>. Els valors dels grups superiors es calculen sumant els seus descendents. Així, una fila compta com un registre, encara que descrigui més d’un individu; no s’ha utilitzat el nombre d’individus per calcular <code>observaciones</code>.</p><p>La jerarquia representada és classe → ordre → família → gènere → espècie, amb alguns nodes superiors afegits per facilitar la lectura. El fitxer derivat simplifica les dades originals i no conserva tots els camps d’OBIS.</p></div>
+  </div>
+ </section>
+ <footer class="author-footer">Autora: Aitana Tomás San Martín</footer>
+ <section class="method">
+  <h2>Procedència i metodologia de les dades</h2>
+  <div class="method-grid">
+   <div class="method-block"><h3>Archivo y procedencia</h3><ul>
+    <li><b>Fitxer de dades de la visualització:</b> <span id="sourceFile">data/peces.csv (CSV derivat de la descàrrega d’OBIS)</span></li>
+    <li><b>Font original:</b> Ocean Biodiversity Information System (OBIS); consulteu <code>citations.html</code> i <code>query.json</code> per a les referències i els paràmetres de descàrrega.</li>
+    <li><b>Data de descàrrega registrada:</b> 25 d’octubre de 2026. Les llicències depenen dels conjunts de dades d’origen.</li>
+   </ul></div>
+   <div class="method-block"><h3>Construcció de la jerarquia</h3><ul>
+    <li>Camps seleccionats: <code>class → order → family → genus → species</code>.</li>
+    <li>La mida representa els registres d’ocurrència o les espècies contingudes, segons el selector.</li>
+    <li>Els valors dels nodes pares es calculen sumant els descendents.</li>
+    <li>Els registres s’agrupen per ruta taxonòmica i se’n compten les files; no s’ha confirmat una eliminació addicional de duplicats.</li>
+   </ul></div>
+   <div class="method-block"><h3>Què representa la mida</h3><p>El tamaño se puede cambiar entre observaciones registradas y especies contenidas. En modo especies, cada taxón terminal cuenta como una especie en la jerarquía y los padres agregan sus descendientes. La animación añade un movimiento sutil y el arrastre permite reorganizar visualmente los nodos; la jerarquía y los valores no cambian. El empaquetamiento aplica restricciones geométricas, así que úsalo para explorar composición, no para comparar con precisión.</p></div>
+   <div class="method-block"><h3>Limitacions i tractament</h3><p>Un registre no equival necessàriament a un individu ni mesura directament l’abundància real. Els valors taxonòmics buits es representen com a «Sin dato» al CSV de treball. Els resultats reflecteixen els registres disponibles i poden estar condicionats pel mostreig i per la cobertura de les dades.</p></div>
+  </div>
+  <div class="footer" id="status">Datos integrados en el HTML para que puedas abrirlo directamente. La librería D3.js se carga desde internet.</div>
+ </section>
+</main>
+
+<!-- Galeria comparativa: reune las fotografies de totes les espècies del grup actiu. -->
+<div id="photoCompareModal" hidden role="dialog" aria-modal="true" aria-labelledby="photoCompareTitle">
+ <section class="photo-compare-window">
+  <header class="photo-compare-head"><div><h2 id="photoCompareTitle">Comparar fotografies</h2><p id="photoCompareSubtitle">Les imatges disponibles es carreguen des de Wikipedia o Wikimedia Commons.</p></div><button id="photoCompareClose" type="button" aria-label="Tancar la galeria">×</button></header>
+  <div id="photoCompareGrid"></div><div id="photoCompareStatus" aria-live="polite">Preparant la galeria…</div>
+ </section>
+</div>
+
+<!-- Tarjeta que muestra la fotografía de una especie al seleccionarla. -->
+<div class="species-photo-card" id="speciesPhotoCard" hidden role="dialog" aria-label="Fotografia de l’espècie">
+ <div class="species-photo-head">
+  <div><div class="species-photo-title" id="speciesPhotoTitle"></div><div class="species-photo-sub">Fotografia de referència · cerca automàtica</div></div>
+  <button class="species-photo-close" id="speciesPhotoClose" type="button" aria-label="Tanca la fotografia">×</button>
+ </div>
+ <div class="species-photo-frame" id="speciesPhotoFrame">
+  <div id="speciesPhotoPlaceholder" style="font-size:12px;color:#69746e;padding:18px;text-align:center">Cercant una imatge…</div>
+  <img id="speciesPhotoImg" alt="" hidden>
+ </div>
+ <div class="species-photo-status" id="speciesPhotoStatus" aria-live="polite">Cercant a Wikipedia…</div>
+ <a class="species-photo-source" id="speciesPhotoSource" href="#" target="_blank" rel="noopener noreferrer" hidden>Veure font de la imatge ↗</a>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/info.js"></script>
+
+</body>
+</html>

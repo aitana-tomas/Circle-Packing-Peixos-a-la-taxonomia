@@ -1,0 +1,561 @@
+class,order,family,genus,species,observaciones
+Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Carcharhinus altimus,1
+Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Carcharhinus limbatus,1
+Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Carcharhinus longimanus,1
+Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Carcharhinus melanopterus,7
+Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Carcharhinus obscurus,3
+Elasmobranchii,Carcharhiniformes,Carcharhinidae,Carcharhinus,Carcharhinus plumbeus,3
+Elasmobranchii,Carcharhiniformes,Carcharhinidae,Prionace,Prionace glauca,30
+Elasmobranchii,Carcharhiniformes,Pentanchidae,Galeus,Galeus melastomus,2
+Elasmobranchii,Carcharhiniformes,Scyliorhinidae,Scyliorhinus,Scyliorhinus canicula,26
+Elasmobranchii,Carcharhiniformes,Scyliorhinidae,Scyliorhinus,Scyliorhinus stellaris,31
+Elasmobranchii,Carcharhiniformes,Triakidae,Galeorhinus,Galeorhinus galeus,3
+Elasmobranchii,Carcharhiniformes,Triakidae,Mustelus,Mustelus mustelus,4
+Elasmobranchii,Carcharhiniformes,Triakidae,Mustelus,Mustelus punctulatus,1
+Elasmobranchii,Hexanchiformes,Hexanchidae,Heptranchias,Heptranchias perlo,2
+Elasmobranchii,Hexanchiformes,Hexanchidae,Hexanchus,Hexanchus griseus,4
+Elasmobranchii,Lamniformes,Alopiidae,Alopias,Alopias superciliosus,1
+Elasmobranchii,Lamniformes,Alopiidae,Alopias,Alopias vulpinus,2
+Elasmobranchii,Lamniformes,Cetorhinidae,Cetorhinus,Cetorhinus maximus,3
+Elasmobranchii,Lamniformes,Lamnidae,Carcharodon,Carcharodon carcharias,2
+Elasmobranchii,Lamniformes,Lamnidae,Isurus,Isurus oxyrinchus,2
+Elasmobranchii,Myliobatiformes,Dasyatidae,Dasyatis,Dasyatis pastinaca,114
+Elasmobranchii,Myliobatiformes,Dasyatidae,Dasyatis,Dasyatis tortonesei,3
+Elasmobranchii,Myliobatiformes,Dasyatidae,Dasyatis,Sin dato,2
+Elasmobranchii,Myliobatiformes,Dasyatidae,Himantura,Himantura leoparda,1
+Elasmobranchii,Myliobatiformes,Dasyatidae,Himantura,Himantura uarnak,18
+Elasmobranchii,Myliobatiformes,Dasyatidae,Pteroplatytrygon,Pteroplatytrygon violacea,28
+Elasmobranchii,Myliobatiformes,Dasyatidae,Taeniurops,Taeniurops grabatus,6
+Elasmobranchii,Myliobatiformes,Gymnuridae,Gymnura,Gymnura altavela,47
+Elasmobranchii,Myliobatiformes,Mobulidae,Mobula,Mobula mobular,51
+Elasmobranchii,Myliobatiformes,Myliobatidae,Aetomylaeus,Aetomylaeus bovinus,15
+Elasmobranchii,Myliobatiformes,Myliobatidae,Myliobatis,Myliobatis aquila,39
+Elasmobranchii,Myliobatiformes,Rhinopteridae,Rhinoptera,Rhinoptera marginata,5
+Elasmobranchii,Orectolobiformes,Rhincodontidae,Rhincodon,Rhincodon typus,1
+Elasmobranchii,Rajiformes,Rajidae,Dipturus,Dipturus oxyrinchus,1
+Elasmobranchii,Rajiformes,Rajidae,Leucoraja,Leucoraja naevus,1
+Elasmobranchii,Rajiformes,Rajidae,Raja,Raja asterias,82
+Elasmobranchii,Rajiformes,Rajidae,Raja,Raja clavata,18
+Elasmobranchii,Rajiformes,Rajidae,Raja,Raja miraletus,6
+Elasmobranchii,Rajiformes,Rajidae,Raja,Raja montagui,6
+Elasmobranchii,Rajiformes,Rajidae,Raja,Raja radula,15
+Elasmobranchii,Rajiformes,Rajidae,Raja,Raja undulata,36
+Elasmobranchii,Rajiformes,Rajidae,Raja,Sin dato,2
+Elasmobranchii,Rajiformes,Rajidae,Rostroraja,Rostroraja alba,2
+Elasmobranchii,Rhinopristiformes,Glaucostegidae,Glaucostegus,Glaucostegus cemiculus,5
+Elasmobranchii,Rhinopristiformes,Rhinobatidae,Rhinobatos,Rhinobatos rhinobatos,25
+Elasmobranchii,Sin dato,Sin dato,Sin dato,Sin dato,4
+Elasmobranchii,Squaliformes,Centrophoridae,Centrophorus,Centrophorus uyato,2
+Elasmobranchii,Squaliformes,Centrophoridae,Centrophorus,Sin dato,3
+Elasmobranchii,Squaliformes,Dalatiidae,Dalatias,Dalatias licha,1
+Elasmobranchii,Squaliformes,Oxynotidae,Oxynotus,Oxynotus centrina,1
+Elasmobranchii,Squaliformes,Squalidae,Squalus,Squalus blainville,7
+Elasmobranchii,Torpediniformes,Torpedinidae,Torpedo,Torpedo marmorata,120
+Elasmobranchii,Torpediniformes,Torpedinidae,Torpedo,Torpedo torpedo,92
+Holocephali,Chimaeriformes,Chimaeridae,Chimaera,Chimaera monstrosa,1
+Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Acanthurus chirurgus,2
+Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Acanthurus coeruleus,1
+Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Acanthurus monroviae,5
+Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Acanthurus sohal,2
+Teleostei,Acanthuriformes,Acanthuridae,Acanthurus,Acanthurus xanthopterus,1
+Teleostei,Acanthuriformes,Acanthuridae,Paracanthurus,Paracanthurus hepatus,3
+Teleostei,Acanthuriformes,Antigoniidae,Antigonia,Antigonia capros,2
+Teleostei,Acanthuriformes,Caproidae,Capros,Capros aper,4
+Teleostei,Acanthuriformes,Chaetodontidae,Chaetodon,Chaetodon larvatus,1
+Teleostei,Acanthuriformes,Chaetodontidae,Heniochus,Heniochus intermedius,4
+Teleostei,Acanthuriformes,Leiognathidae,Equulites,Equulites klunzingeri,228
+Teleostei,Acanthuriformes,Leiognathidae,Equulites,Equulites leuciscus,1
+Teleostei,Acanthuriformes,Leiognathidae,Equulites,Equulites popei,10
+Teleostei,Acanthuriformes,Lobotidae,Lobotes,Lobotes surinamensis,11
+Teleostei,Acanthuriformes,Luvaridae,Luvarus,Luvarus imperialis,1
+Teleostei,Acanthuriformes,Pomacanthidae,Holacanthus,Holacanthus africanus,1
+Teleostei,Acanthuriformes,Pomacanthidae,Pomacanthus,Pomacanthus imperator,9
+Teleostei,Acanthuriformes,Pomacanthidae,Pomacanthus,Pomacanthus maculosus,13
+Teleostei,Acanthuriformes,Pomacanthidae,Pomacanthus,Pomacanthus semicirculatus,1
+Teleostei,Acanthuriformes,Scatophagidae,Scatophagus,Scatophagus argus,3
+Teleostei,Acanthuriformes,Siganidae,Siganus,Siganus javus,1
+Teleostei,Acanthuriformes,Siganidae,Siganus,Siganus luridus,343
+Teleostei,Acanthuriformes,Siganidae,Siganus,Siganus rivulatus,7908
+Teleostei,Acanthuriformes,Siganidae,Siganus,Sin dato,14
+Teleostei,Acropomatiformes,Champsodontidae,Champsodon,Champsodon nudivittis,16
+Teleostei,Acropomatiformes,Pempheridae,Pempheris,Pempheris rhomboidea,98
+Teleostei,Acropomatiformes,Polyprionidae,Polyprion,Polyprion americanus,6
+Teleostei,Anguilliformes,Anguillidae,Anguilla,Anguilla anguilla,76
+Teleostei,Anguilliformes,Congridae,Ariosoma,Ariosoma balearicum,159
+Teleostei,Anguilliformes,Congridae,Conger,Conger conger,232
+Teleostei,Anguilliformes,Muraenesocidae,Muraenesox,Muraenesox cinereus,1
+Teleostei,Anguilliformes,Muraenidae,Enchelycore,Enchelycore anatina,19
+Teleostei,Anguilliformes,Muraenidae,Gymnothorax,Gymnothorax unicolor,18
+Teleostei,Anguilliformes,Muraenidae,Muraena,Muraena helena,808
+Teleostei,Anguilliformes,Muraenidae,Sin dato,Sin dato,2
+Teleostei,Anguilliformes,Nemichthyidae,Nemichthys,Nemichthys scolopaceus,1
+Teleostei,Anguilliformes,Ophichthidae,Apterichtus,Apterichtus caecus,17
+Teleostei,Anguilliformes,Ophichthidae,Dalophis,Dalophis imberbis,140
+Teleostei,Anguilliformes,Ophichthidae,Ophichthus,Ophichthus rufus,1
+Teleostei,Anguilliformes,Ophichthidae,Ophisurus,Ophisurus serpens,222
+Teleostei,Anguilliformes,Ophichthidae,Pisodonophis,Pisodonophis semicinctus,3
+Teleostei,Atheriniformes,Atherinidae,Atherina,Atherina boyeri,98
+Teleostei,Atheriniformes,Atherinidae,Atherina,Atherina hepsetus,152
+Teleostei,Atheriniformes,Atherinidae,Atherina,Sin dato,11
+Teleostei,Atheriniformes,Atherinidae,Atherinomorus,Atherinomorus forskalii,63
+Teleostei,Atheriniformes,Atherinidae,Atherinomorus,Sin dato,4
+Teleostei,Atheriniformes,Atherinidae,Sin dato,Sin dato,1
+Teleostei,Atheriniformes,Sin dato,Sin dato,Sin dato,7
+Teleostei,Aulopiformes,Aulopidae,Aulopus,Aulopus filamentosus,4
+Teleostei,Aulopiformes,Synodontidae,Saurida,Saurida gracilis,2
+Teleostei,Aulopiformes,Synodontidae,Saurida,Saurida lessepsianus,373
+Teleostei,Aulopiformes,Synodontidae,Synodus,Synodus randalli,3
+Teleostei,Aulopiformes,Synodontidae,Synodus,Synodus saurus,154
+Teleostei,Aulopiformes,Synodontidae,Synodus,Synodus synodus,19
+Teleostei,Batrachoidiformes,Batrachoididae,Halobatrachus,Halobatrachus didactylus,1
+Teleostei,Beloniformes,Belonidae,Ablennes,Ablennes hians,5
+Teleostei,Beloniformes,Belonidae,Belone,Belone belone,36
+Teleostei,Beloniformes,Belonidae,Belone,Sin dato,3
+Teleostei,Beloniformes,Exocoetidae,Cheilopogon,Cheilopogon furcatus,9
+Teleostei,Beloniformes,Exocoetidae,Cheilopogon,Cheilopogon heterurus,4
+Teleostei,Beloniformes,Exocoetidae,Exocoetus,Sin dato,10
+Teleostei,Beloniformes,Exocoetidae,Hirundichthys,Hirundichthys rondeletii,4
+Teleostei,Beloniformes,Exocoetidae,Parexocoetus,Parexocoetus mento,1
+Teleostei,Beloniformes,Exocoetidae,Sin dato,Sin dato,276
+Teleostei,Beloniformes,Hemiramphidae,Hemiramphus,Hemiramphus far,21
+Teleostei,Blenniiformes,Blenniidae,Aidablennius,Aidablennius sphynx,246
+Teleostei,Blenniiformes,Blenniidae,Blennius,Blennius ocellaris,18
+Teleostei,Blenniiformes,Blenniidae,Coryphoblennius,Coryphoblennius galerita,32
+Teleostei,Blenniiformes,Blenniidae,Hypleurochilus,Sin dato,22
+Teleostei,Blenniiformes,Blenniidae,Istiblennius,Istiblennius meleagris,13
+Teleostei,Blenniiformes,Blenniidae,Lipophrys,Lipophrys trigloides,122
+Teleostei,Blenniiformes,Blenniidae,Microlipophrys,Microlipophrys canevae,113
+Teleostei,Blenniiformes,Blenniidae,Microlipophrys,Microlipophrys dalmatinus,74
+Teleostei,Blenniiformes,Blenniidae,Microlipophrys,Microlipophrys nigriceps,71
+Teleostei,Blenniiformes,Blenniidae,Ophioblennius,Ophioblennius atlanticus,2
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius cyclops,2
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius gattorugine,596
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius incognitus,231
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius pilicornis,675
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius rouxi,297
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius ruber,1
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius sanguinolentus,255
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius tentacularis,46
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Parablennius zvonimiri,307
+Teleostei,Blenniiformes,Blenniidae,Parablennius,Sin dato,1
+Teleostei,Blenniiformes,Blenniidae,Petroscirtes,Petroscirtes ancylodon,1
+Teleostei,Blenniiformes,Blenniidae,Salaria,Salaria basilisca,1
+Teleostei,Blenniiformes,Blenniidae,Salaria,Salaria pavo,150
+Teleostei,Blenniiformes,Blenniidae,Salariopsis,Salariopsis fluviatilis,2
+Teleostei,Blenniiformes,Blenniidae,Scartella,Scartella cristata,45
+Teleostei,Blenniiformes,Blenniidae,Sin dato,Sin dato,2
+Teleostei,Blenniiformes,Clinidae,Clinitrachus,Clinitrachus argentatus,24
+Teleostei,Blenniiformes,Tripterygiidae,Sin dato,Sin dato,10
+Teleostei,Blenniiformes,Tripterygiidae,Tripterygion,Sin dato,1
+Teleostei,Blenniiformes,Tripterygiidae,Tripterygion,Tripterygion delaisi,532
+Teleostei,Blenniiformes,Tripterygiidae,Tripterygion,Tripterygion melanurus,252
+Teleostei,Blenniiformes,Tripterygiidae,Tripterygion,Tripterygion tartessicum,35
+Teleostei,Blenniiformes,Tripterygiidae,Tripterygion,Tripterygion tripteronotum,447
+Teleostei,Callionymiformes,Callionymidae,Callionymus,Callionymus filamentosus,103
+Teleostei,Callionymiformes,Callionymidae,Callionymus,Callionymus pusillus,37
+Teleostei,Callionymiformes,Callionymidae,Callionymus,Callionymus reticulatus,13
+Teleostei,Callionymiformes,Callionymidae,Callionymus,Callionymus risso,143
+Teleostei,Callionymiformes,Callionymidae,Synchiropus,Synchiropus sechellensis,13
+Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Sin dato,14
+Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Sphyraena chrysotaenia,101
+Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Sphyraena flavicauda,10
+Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Sphyraena obtusata,2
+Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Sphyraena pinguis,1
+Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Sphyraena sphyraena,12
+Teleostei,Carangaria incertae sedis,Sphyraenidae,Sphyraena,Sphyraena viridensis,267
+Teleostei,Carangiformes,Carangidae,Alepes,Alepes djedaba,4
+Teleostei,Carangiformes,Carangidae,Caranx,Caranx crysos,64
+Teleostei,Carangiformes,Carangidae,Caranx,Caranx rhonchus,2
+Teleostei,Carangiformes,Carangidae,Decapterus,Decapterus russelli,54
+Teleostei,Carangiformes,Carangidae,Lichia,Lichia amia,11
+Teleostei,Carangiformes,Carangidae,Naucrates,Naucrates ductor,13
+Teleostei,Carangiformes,Carangidae,Pseudocaranx,Pseudocaranx dentex,25
+Teleostei,Carangiformes,Carangidae,Selene,Selene dorsalis,1
+Teleostei,Carangiformes,Carangidae,Seriola,Seriola carpenteri,1
+Teleostei,Carangiformes,Carangidae,Seriola,Seriola dumerili,116
+Teleostei,Carangiformes,Carangidae,Seriola,Seriola fasciata,21
+Teleostei,Carangiformes,Carangidae,Trachinotus,Trachinotus ovatus,100
+Teleostei,Carangiformes,Carangidae,Trachurus,Sin dato,1
+Teleostei,Carangiformes,Carangidae,Trachurus,Trachurus mediterraneus,23
+Teleostei,Carangiformes,Carangidae,Trachurus,Trachurus picturatus,1
+Teleostei,Carangiformes,Carangidae,Trachurus,Trachurus trachurus,6
+Teleostei,Carangiformes,Coryphaenidae,Coryphaena,Coryphaena equiselis,1
+Teleostei,Carangiformes,Coryphaenidae,Coryphaena,Coryphaena hippurus,16
+Teleostei,Carangiformes,Echeneidae,Echeneis,Echeneis naucrates,20
+Teleostei,Carangiformes,Echeneidae,Remora,Remora australis,1
+Teleostei,Carangiformes,Istiophoridae,Istiompax,Istiompax indica,1
+Teleostei,Carangiformes,Istiophoridae,Kajikia,Kajikia albida,1
+Teleostei,Carangiformes,Istiophoridae,Tetrapturus,Tetrapturus belone,3
+Teleostei,Carangiformes,Rachycentridae,Rachycentron,Rachycentron canadum,1
+Teleostei,Carangiformes,Xiphiidae,Sin dato,Sin dato,28
+Teleostei,Carangiformes,Xiphiidae,Xiphias,Xiphias gladius,165
+Teleostei,Centrarchiformes,Kyphosidae,Kyphosus,Kyphosus sectatrix,2
+Teleostei,Centrarchiformes,Kyphosidae,Kyphosus,Sin dato,1
+Teleostei,Centrarchiformes,Terapontidae,Leiopotherapon,Sin dato,6
+Teleostei,Centrarchiformes,Terapontidae,Pelates,Pelates quadrilineatus,6
+Teleostei,Centrarchiformes,Terapontidae,Terapon,Terapon jarbua,1
+Teleostei,Centrarchiformes,Terapontidae,Terapon,Terapon puta,37
+Teleostei,Cichliformes,Cichlidae,Sin dato,Sin dato,2
+Teleostei,Clupeiformes,Alosidae,Alosa,Alosa algeriensis,1
+Teleostei,Clupeiformes,Alosidae,Sardina,Sardina pilchardus,20
+Teleostei,Clupeiformes,Clupeidae,Clupea,Sin dato,11
+Teleostei,Clupeiformes,Clupeidae,Sprattus,Sprattus sprattus,1
+Teleostei,Clupeiformes,Dorosomatidae,Herklotsichthys,Herklotsichthys punctatus,20
+Teleostei,Clupeiformes,Dorosomatidae,Sardinella,Sardinella aurita,22
+Teleostei,Clupeiformes,Dorosomatidae,Sardinella,Sardinella gibbosa,4
+Teleostei,Clupeiformes,Dussumieriidae,Dussumieria,Dussumieria elopsoides,15
+Teleostei,Clupeiformes,Dussumieriidae,Etrumeus,Etrumeus golanii,51
+Teleostei,Clupeiformes,Engraulidae,Encrasicholina,Encrasicholina gloria,1
+Teleostei,Clupeiformes,Engraulidae,Engraulis,Engraulis encrasicolus,6
+Teleostei,Clupeiformes,Engraulidae,Stolephorus,Stolephorus indicus,1
+Teleostei,Clupeiformes,Spratelloididae,Spratelloides,Spratelloides delicatulus,2
+Teleostei,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,1
+Teleostei,Cypriniformes,Xenocyprididae,Sin dato,Sin dato,4
+Teleostei,Cyprinodontiformes,Cyprinodontidae,Aphanius,Aphanius fasciatus,1
+Teleostei,Dactylopteriformes,Dactylopteridae,Dactylopterus,Dactylopterus volitans,86
+Teleostei,Elopiformes,Megalopidae,Megalops,Sin dato,2
+Teleostei,Eupercaria incertae sedis,Caesionidae,Caesio,Caesio varilineata,3
+Teleostei,Eupercaria incertae sedis,Caesionidae,Dipterygonotus,Dipterygonotus balteatus,1
+Teleostei,Eupercaria incertae sedis,Cepolidae,Cepola,Cepola macrophthalma,4
+Teleostei,Eupercaria incertae sedis,Gerreidae,Gerres,Sin dato,6
+Teleostei,Eupercaria incertae sedis,Haemulidae,Parapristipoma,Parapristipoma octolineatum,3
+Teleostei,Eupercaria incertae sedis,Haemulidae,Pomadasys,Pomadasys argenteus,1
+Teleostei,Eupercaria incertae sedis,Haemulidae,Pomadasys,Pomadasys incisus,26
+Teleostei,Eupercaria incertae sedis,Haemulidae,Pomadasys,Pomadasys stridens,54
+Teleostei,Eupercaria incertae sedis,Labridae,Acantholabrus,Acantholabrus palloni,1
+Teleostei,Eupercaria incertae sedis,Labridae,Centrolabrus,Centrolabrus melanocercus,157
+Teleostei,Eupercaria incertae sedis,Labridae,Cheilinus,Cheilinus lunulatus,1
+Teleostei,Eupercaria incertae sedis,Labridae,Coris,Coris julis,1650
+Teleostei,Eupercaria incertae sedis,Labridae,Coris,Coris melanura,10
+Teleostei,Eupercaria incertae sedis,Labridae,Ctenolabrus,Ctenolabrus rupestris,80
+Teleostei,Eupercaria incertae sedis,Labridae,Labrus,Labrus bergylta,3
+Teleostei,Eupercaria incertae sedis,Labridae,Labrus,Labrus merula,533
+Teleostei,Eupercaria incertae sedis,Labridae,Labrus,Labrus mixtus,98
+Teleostei,Eupercaria incertae sedis,Labridae,Labrus,Labrus viridis,108
+Teleostei,Eupercaria incertae sedis,Labridae,Labrus,Sin dato,14
+Teleostei,Eupercaria incertae sedis,Labridae,Lappanella,Lappanella fasciata,2
+Teleostei,Eupercaria incertae sedis,Labridae,Pteragogus,Pteragogus trispilus,39
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Sin dato,39
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus cinereus,122
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus doderleini,82
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus mediterraneus,332
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus melops,63
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus ocellatus,201
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus roissali,489
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus rostratus,235
+Teleostei,Eupercaria incertae sedis,Labridae,Symphodus,Symphodus tinca,971
+Teleostei,Eupercaria incertae sedis,Labridae,Thalassoma,Sin dato,16
+Teleostei,Eupercaria incertae sedis,Labridae,Thalassoma,Thalassoma pavo,1268
+Teleostei,Eupercaria incertae sedis,Labridae,Xyrichtys,Xyrichtys novacula,125
+Teleostei,Eupercaria incertae sedis,Lethrinidae,Lethrinus,Lethrinus borbonicus,1
+Teleostei,Eupercaria incertae sedis,Lutjanidae,Lutjanus,Lutjanus argentimaculatus,6
+Teleostei,Eupercaria incertae sedis,Moronidae,Dicentrarchus,Dicentrarchus labrax,281
+Teleostei,Eupercaria incertae sedis,Moronidae,Dicentrarchus,Dicentrarchus punctatus,9
+Teleostei,Eupercaria incertae sedis,Moronidae,Morone,Morone saxatilis,2
+Teleostei,Eupercaria incertae sedis,Nemipteridae,Nemipterus,Nemipterus randalli,248
+Teleostei,Eupercaria incertae sedis,Nemipteridae,Scolopsis,Scolopsis ghanam,1
+Teleostei,Eupercaria incertae sedis,Priacanthidae,Priacanthus,Priacanthus hamrur,2
+Teleostei,Eupercaria incertae sedis,Priacanthidae,Priacanthus,Priacanthus prolixus,1
+Teleostei,Eupercaria incertae sedis,Priacanthidae,Priacanthus,Priacanthus sagittarius,13
+Teleostei,Eupercaria incertae sedis,Scaridae,Chlorurus,Chlorurus rhakoura,1
+Teleostei,Eupercaria incertae sedis,Scaridae,Scarus,Scarus ghobban,30
+Teleostei,Eupercaria incertae sedis,Scaridae,Sparisoma,Sparisoma cretense,490
+Teleostei,Eupercaria incertae sedis,Sciaenidae,Argyrosomus,Argyrosomus regius,5
+Teleostei,Eupercaria incertae sedis,Sciaenidae,Pseudotolithus,Pseudotolithus senegallus,1
+Teleostei,Eupercaria incertae sedis,Sciaenidae,Sciaena,Sciaena umbra,498
+Teleostei,Eupercaria incertae sedis,Sciaenidae,Sciaenops,Sciaenops ocellatus,1
+Teleostei,Eupercaria incertae sedis,Sciaenidae,Sin dato,Sin dato,6
+Teleostei,Eupercaria incertae sedis,Sciaenidae,Umbrina,Umbrina canariensis,6
+Teleostei,Eupercaria incertae sedis,Sciaenidae,Umbrina,Umbrina cirrosa,10
+Teleostei,Eupercaria incertae sedis,Sillaginidae,Sillago,Sillago suezensis,63
+Teleostei,Eupercaria incertae sedis,Sparidae,Acanthopagrus,Acanthopagrus bifasciatus,4
+Teleostei,Eupercaria incertae sedis,Sparidae,Boops,Boops boops,380
+Teleostei,Eupercaria incertae sedis,Sparidae,Dentex,Dentex dentex,309
+Teleostei,Eupercaria incertae sedis,Sparidae,Dentex,Dentex gibbosus,3
+Teleostei,Eupercaria incertae sedis,Sparidae,Dentex,Dentex macrophthalmus,1
+Teleostei,Eupercaria incertae sedis,Sparidae,Dentex,Dentex maroccanus,3
+Teleostei,Eupercaria incertae sedis,Sparidae,Diplodus,Diplodus annularis,233
+Teleostei,Eupercaria incertae sedis,Sparidae,Diplodus,Diplodus cervinus,170
+Teleostei,Eupercaria incertae sedis,Sparidae,Diplodus,Diplodus puntazzo,391
+Teleostei,Eupercaria incertae sedis,Sparidae,Diplodus,Diplodus sargus,1057
+Teleostei,Eupercaria incertae sedis,Sparidae,Diplodus,Diplodus vulgaris,1084
+Teleostei,Eupercaria incertae sedis,Sparidae,Diplodus,Sin dato,307
+Teleostei,Eupercaria incertae sedis,Sparidae,Lithognathus,Lithognathus mormyrus,298
+Teleostei,Eupercaria incertae sedis,Sparidae,Oblada,Oblada melanurus,632
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagellus,Pagellus acarne,116
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagellus,Pagellus bellottii,5
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagellus,Pagellus bogaraveo,14
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagellus,Pagellus erythrinus,151
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagrus,Pagrus auriga,7
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagrus,Pagrus caeruleostictus,3
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagrus,Pagrus major,1
+Teleostei,Eupercaria incertae sedis,Sparidae,Pagrus,Pagrus pagrus,218
+Teleostei,Eupercaria incertae sedis,Sparidae,Rhabdosargus,Rhabdosargus haffara,1
+Teleostei,Eupercaria incertae sedis,Sparidae,Sarpa,Sarpa salpa,1297
+Teleostei,Eupercaria incertae sedis,Sparidae,Sin dato,Sin dato,185
+Teleostei,Eupercaria incertae sedis,Sparidae,Sparus,Sparus aurata,425
+Teleostei,Eupercaria incertae sedis,Sparidae,Spicara,Sin dato,6
+Teleostei,Eupercaria incertae sedis,Sparidae,Spicara,Spicara flexuosum,22
+Teleostei,Eupercaria incertae sedis,Sparidae,Spicara,Spicara maena,297
+Teleostei,Eupercaria incertae sedis,Sparidae,Spicara,Spicara smaris,114
+Teleostei,Eupercaria incertae sedis,Sparidae,Spondyliosoma,Spondyliosoma cantharus,226
+Teleostei,Gadiformes,Bregmacerotidae,Bregmaceros,Bregmaceros nectabanus,3
+Teleostei,Gadiformes,Gadidae,Trisopterus,Trisopterus capelanus,15
+Teleostei,Gadiformes,Gaidropsaridae,Gaidropsarus,Gaidropsarus mediterraneus,30
+Teleostei,Gadiformes,Gaidropsaridae,Gaidropsarus,Gaidropsarus vulgaris,1
+Teleostei,Gadiformes,Gaidropsaridae,Gaidropsarus,Sin dato,3
+Teleostei,Gadiformes,Merlucciidae,Merluccius,Merluccius merluccius,10
+Teleostei,Gadiformes,Phycidae,Phycis,Phycis phycis,209
+Teleostei,Gobiesociformes,Gobiesocidae,Apletodon,Apletodon dentatus,3
+Teleostei,Gobiesociformes,Gobiesocidae,Apletodon,Apletodon incognitus,24
+Teleostei,Gobiesociformes,Gobiesocidae,Diplecogaster,Diplecogaster bimaculata,28
+Teleostei,Gobiesociformes,Gobiesocidae,Gouania,Gouania willdenowi,2
+Teleostei,Gobiesociformes,Gobiesocidae,Lepadogaster,Lepadogaster candolii,102
+Teleostei,Gobiesociformes,Gobiesocidae,Lepadogaster,Lepadogaster lepadogaster,49
+Teleostei,Gobiesociformes,Gobiesocidae,Lepadogaster,Lepadogaster purpurea,9
+Teleostei,Gobiesociformes,Gobiesocidae,Lepadogaster,Sin dato,2
+Teleostei,Gobiesociformes,Gobiesocidae,Opeatogenys,Opeatogenys gracilis,14
+Teleostei,Gobiesociformes,Gobiesocidae,Opeatogenys,Sin dato,3
+Teleostei,Gobiesociformes,Gobiesocidae,Sin dato,Sin dato,1
+Teleostei,Gobiiformes,Gobiidae,Aphia,Aphia minuta,54
+Teleostei,Gobiiformes,Gobiidae,Aulopareia,Aulopareia unicolor,3
+Teleostei,Gobiiformes,Gobiidae,Buenia,Buenia affinis,77
+Teleostei,Gobiiformes,Gobiidae,Buenia,Buenia massutii,13
+Teleostei,Gobiiformes,Gobiidae,Chromogobius,Chromogobius quadrivittatus,1
+Teleostei,Gobiiformes,Gobiidae,Chromogobius,Chromogobius zebratus,16
+Teleostei,Gobiiformes,Gobiidae,Corcyrogobius,Corcyrogobius liechtensteini,23
+Teleostei,Gobiiformes,Gobiidae,Cryptocentrus,Cryptocentrus caeruleopunctatus,2
+Teleostei,Gobiiformes,Gobiidae,Cryptocentrus,Cryptocentrus steinhardti,3
+Teleostei,Gobiiformes,Gobiidae,Crystallogobius,Crystallogobius linearis,1
+Teleostei,Gobiiformes,Gobiidae,Ctenogobius,Ctenogobius boleosoma,2
+Teleostei,Gobiiformes,Gobiidae,Deltentosteus,Deltentosteus collonianus,1
+Teleostei,Gobiiformes,Gobiidae,Deltentosteus,Deltentosteus quadrimaculatus,68
+Teleostei,Gobiiformes,Gobiidae,Didogobius,Didogobius schlieweni,5
+Teleostei,Gobiiformes,Gobiidae,Gammogobius,Gammogobius steinitzi,7
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius auratus,65
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius bucchichi,2
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius cobitis,186
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius couchi,17
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius cruentatus,189
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius fallax,15
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius geniporus,265
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius incognitus,657
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius kolombatovici,48
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius paganellus,327
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius roulei,71
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius vittatus,122
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius xanthocephalus,253
+Teleostei,Gobiiformes,Gobiidae,Gobius,Gobius xoriguer,31
+Teleostei,Gobiiformes,Gobiidae,Gobius,Sin dato,2
+Teleostei,Gobiiformes,Gobiidae,Hazeus,Hazeus ingressus,5
+Teleostei,Gobiiformes,Gobiidae,Lebetus,Lebetus guilleti,1
+Teleostei,Gobiiformes,Gobiidae,Lesueurigobius,Lesueurigobius friesii,3
+Teleostei,Gobiiformes,Gobiidae,Lesueurigobius,Lesueurigobius suerii,20
+Teleostei,Gobiiformes,Gobiidae,Marcelogobius,Marcelogobius splechtnai,6
+Teleostei,Gobiiformes,Gobiidae,Millerigobius,Millerigobius macrocephalus,6
+Teleostei,Gobiiformes,Gobiidae,Odondebuenia,Odondebuenia balearica,5
+Teleostei,Gobiiformes,Gobiidae,Oxyurichthys,Oxyurichthys keiensis,1
+Teleostei,Gobiiformes,Gobiidae,Oxyurichthys,Oxyurichthys petersii,4
+Teleostei,Gobiiformes,Gobiidae,Pomatoschistus,Pomatoschistus bathi,148
+Teleostei,Gobiiformes,Gobiidae,Pomatoschistus,Pomatoschistus marmoratus,514
+Teleostei,Gobiiformes,Gobiidae,Pomatoschistus,Pomatoschistus microps,2
+Teleostei,Gobiiformes,Gobiidae,Pomatoschistus,Pomatoschistus minutus,122
+Teleostei,Gobiiformes,Gobiidae,Pomatoschistus,Pomatoschistus pictus,165
+Teleostei,Gobiiformes,Gobiidae,Pomatoschistus,Pomatoschistus quagga,10
+Teleostei,Gobiiformes,Gobiidae,Pomatoschistus,Pomatoschistus tortonesei,1
+Teleostei,Gobiiformes,Gobiidae,Pseudaphya,Pseudaphya ferreri,21
+Teleostei,Gobiiformes,Gobiidae,Sin dato,Sin dato,18
+Teleostei,Gobiiformes,Gobiidae,Speleogobius,Speleogobius llorisi,11
+Teleostei,Gobiiformes,Gobiidae,Speleogobius,Speleogobius trigloides,17
+Teleostei,Gobiiformes,Gobiidae,Thorogobius,Thorogobius ephippiatus,74
+Teleostei,Gobiiformes,Gobiidae,Thorogobius,Thorogobius macrolepis,76
+Teleostei,Gobiiformes,Gobiidae,Trypauchen,Trypauchen vagina,4
+Teleostei,Gobiiformes,Gobiidae,Vanderhorstia,Vanderhorstia mertensi,5
+Teleostei,Gobiiformes,Gobiidae,Vanneaugobius,Vanneaugobius dollfusi,43
+Teleostei,Gobiiformes,Gobiidae,Zebrus,Zebrus pallaoroi,15
+Teleostei,Gobiiformes,Gobiidae,Zebrus,Zebrus zebrus,10
+Teleostei,Gobiiformes,Gobiidae,Zosterisessor,Zosterisessor ophiocephalus,3
+Teleostei,Holocentriformes,Holocentridae,Holocentrus,Holocentrus adscensionis,1
+Teleostei,Holocentriformes,Holocentridae,Sargocentron,Sargocentron caudimaculatum,1
+Teleostei,Holocentriformes,Holocentridae,Sargocentron,Sargocentron rubrum,205
+Teleostei,Kurtiformes,Apogonidae,Apogon,Apogon imberbis,441
+Teleostei,Kurtiformes,Apogonidae,Apogon,Sin dato,13
+Teleostei,Kurtiformes,Apogonidae,Apogonichthyoides,Apogonichthyoides pharaonis,147
+Teleostei,Kurtiformes,Apogonidae,Cheilodipterus,Cheilodipterus novemstriatus,58
+Teleostei,Kurtiformes,Apogonidae,Jaydia,Jaydia queketti,2
+Teleostei,Kurtiformes,Apogonidae,Jaydia,Jaydia smithi,207
+Teleostei,Kurtiformes,Apogonidae,Ostorhinchus,Ostorhinchus fasciatus,29
+Teleostei,Lampriformes,Lampridae,Lampris,Lampris guttatus,1
+Teleostei,Lampriformes,Regalecidae,Regalecus,Regalecus glesne,3
+Teleostei,Lampriformes,Trachipteridae,Trachipterus,Trachipterus trachypterus,1
+Teleostei,Lampriformes,Trachipteridae,Zu,Zu cristatus,2
+Teleostei,Lophiiformes,Lophiidae,Lophius,Lophius budegassa,5
+Teleostei,Lophiiformes,Lophiidae,Lophius,Lophius piscatorius,31
+Teleostei,Mugiliformes,Mugilidae,Chelon,Chelon auratus,10
+Teleostei,Mugiliformes,Mugilidae,Chelon,Chelon labrosus,104
+Teleostei,Mugiliformes,Mugilidae,Chelon,Chelon ramada,3
+Teleostei,Mugiliformes,Mugilidae,Chelon,Sin dato,8
+Teleostei,Mugiliformes,Mugilidae,Mugil,Mugil cephalus,11
+Teleostei,Mugiliformes,Mugilidae,Oedalechilus,Oedalechilus labeo,143
+Teleostei,Mugiliformes,Mugilidae,Planiliza,Planiliza carinata,1
+Teleostei,Mulliformes,Mullidae,Mullus,Mullus barbatus,247
+Teleostei,Mulliformes,Mullidae,Mullus,Mullus surmuletus,848
+Teleostei,Mulliformes,Mullidae,Mullus,Sin dato,7
+Teleostei,Mulliformes,Mullidae,Parupeneus,Parupeneus forsskali,317
+Teleostei,Mulliformes,Mullidae,Pseudupeneus,Pseudupeneus prayensis,4
+Teleostei,Mulliformes,Mullidae,Upeneus,Upeneus moluccensis,320
+Teleostei,Mulliformes,Mullidae,Upeneus,Upeneus pori,81
+Teleostei,Myctophiformes,Myctophidae,Hygophum,Hygophum benoiti,4
+Teleostei,Myctophiformes,Myctophidae,Myctophum,Myctophum punctatum,7
+Teleostei,Ophidiiformes,Bythitidae,Grammonus,Grammonus ater,3
+Teleostei,Ophidiiformes,Carapidae,Carapus,Carapus acus,16
+Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Ophidion barbatum,1
+Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Ophidion rochei,24
+Teleostei,Ophidiiformes,Ophidiidae,Ophidion,Sin dato,1
+Teleostei,Ophidiiformes,Ophidiidae,Parophidion,Parophidion vassali,3
+Teleostei,Ovalentaria incertae sedis,Ambassidae,Ambassis,Ambassis dussumieri,1
+Teleostei,Ovalentaria incertae sedis,Pomacentridae,Abudefduf,Abudefduf hoefleri,4
+Teleostei,Ovalentaria incertae sedis,Pomacentridae,Abudefduf,Abudefduf vaigiensis,8
+Teleostei,Ovalentaria incertae sedis,Pomacentridae,Chromis,Chromis chromis,955
+Teleostei,Ovalentaria incertae sedis,Pomacentridae,Chromis,Sin dato,68
+Teleostei,Ovalentaria incertae sedis,Pomacentridae,Chrysiptera,Chrysiptera hemicyanea,2
+Teleostei,Ovalentaria incertae sedis,Pomacentridae,Sin dato,Sin dato,35
+Teleostei,Ovalentaria incertae sedis,Pseudochromidae,Pseudochromis,Pseudochromis persicus,4
+Teleostei,Perciformes,Ammodytidae,Gymnammodytes,Gymnammodytes cicerelus,8
+Teleostei,Perciformes,Ammodytidae,Sin dato,Sin dato,26
+Teleostei,Perciformes,Anthiadidae,Anthias,Anthias anthias,288
+Teleostei,Perciformes,Cyclopteridae,Cyclopterus,Cyclopterus lumpus,1
+Teleostei,Perciformes,Epinephelidae,Cephalopholis,Cephalopholis argus,1
+Teleostei,Perciformes,Epinephelidae,Cephalopholis,Cephalopholis nigri,1
+Teleostei,Perciformes,Epinephelidae,Cephalopholis,Cephalopholis taeniops,12
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus aeneus,30
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus areolatus,7
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus caninus,6
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus coioides,1
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus costae,223
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus fasciatus,2
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus geoffroyi,1
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus malabaricus,5
+Teleostei,Perciformes,Epinephelidae,Epinephelus,Epinephelus marginatus,1582
+Teleostei,Perciformes,Epinephelidae,Mycteroperca,Mycteroperca rubra,82
+Teleostei,Perciformes,Epinephelidae,Variola,Variola louti,2
+Teleostei,Perciformes,Peristediidae,Peristedion,Peristedion cataphractum,1
+Teleostei,Perciformes,Platycephalidae,Platycephalus,Platycephalus indicus,4
+Teleostei,Perciformes,Scorpaenidae,Parascorpaena,Parascorpaena mcadamsi,1
+Teleostei,Perciformes,Scorpaenidae,Pterois,Pterois miles,1283
+Teleostei,Perciformes,Scorpaenidae,Scorpaena,Scorpaena elongata,4
+Teleostei,Perciformes,Scorpaenidae,Scorpaena,Scorpaena maderensis,241
+Teleostei,Perciformes,Scorpaenidae,Scorpaena,Scorpaena notata,480
+Teleostei,Perciformes,Scorpaenidae,Scorpaena,Scorpaena porcus,661
+Teleostei,Perciformes,Scorpaenidae,Scorpaena,Scorpaena scrofa,500
+Teleostei,Perciformes,Scorpaenidae,Scorpaena,Scorpaena stephanica,1
+Teleostei,Perciformes,Scorpaenidae,Scorpaena,Sin dato,4
+Teleostei,Perciformes,Sebastidae,Helicolenus,Helicolenus dactylopterus,5
+Teleostei,Perciformes,Serranidae,Serranus,Serranus atricauda,3
+Teleostei,Perciformes,Serranidae,Serranus,Serranus cabrilla,804
+Teleostei,Perciformes,Serranidae,Serranus,Serranus hepatus,147
+Teleostei,Perciformes,Serranidae,Serranus,Serranus papilionaceus,3
+Teleostei,Perciformes,Serranidae,Serranus,Serranus scriba,1412
+Teleostei,Perciformes,Serranidae,Serranus,Sin dato,13
+Teleostei,Perciformes,Sin dato,Sin dato,Sin dato,5
+Teleostei,Perciformes,Synanceiidae,Synanceia,Synanceia verrucosa,3
+Teleostei,Perciformes,Trachinidae,Echiichthys,Echiichthys vipera,47
+Teleostei,Perciformes,Trachinidae,Trachinus,Trachinus araneus,25
+Teleostei,Perciformes,Trachinidae,Trachinus,Trachinus draco,119
+Teleostei,Perciformes,Trachinidae,Trachinus,Trachinus radiatus,24
+Teleostei,Perciformes,Triglidae,Chelidonichthys,Chelidonichthys cuculus,3
+Teleostei,Perciformes,Triglidae,Chelidonichthys,Chelidonichthys lastoviza,44
+Teleostei,Perciformes,Triglidae,Chelidonichthys,Chelidonichthys lucerna,98
+Teleostei,Perciformes,Triglidae,Chelidonichthys,Chelidonichthys obscurus,80
+Teleostei,Perciformes,Triglidae,Eutrigla,Eutrigla gurnardus,14
+Teleostei,Perciformes,Triglidae,Lepidotrigla,Lepidotrigla cavillone,7
+Teleostei,Perciformes,Triglidae,Trigla,Trigla lyra,3
+Teleostei,Perciformes,Uranoscopidae,Uranoscopus,Uranoscopus scaber,51
+Teleostei,Pleuronectiformes,Bothidae,Arnoglossus,Arnoglossus grohmanni,67
+Teleostei,Pleuronectiformes,Bothidae,Arnoglossus,Arnoglossus laterna,215
+Teleostei,Pleuronectiformes,Bothidae,Arnoglossus,Arnoglossus thori,49
+Teleostei,Pleuronectiformes,Bothidae,Bothus,Bothus podas,420
+Teleostei,Pleuronectiformes,Citharidae,Citharus,Citharus linguatula,4
+Teleostei,Pleuronectiformes,Cynoglossidae,Cynoglossus,Cynoglossus sinusarabici,43
+Teleostei,Pleuronectiformes,Pleuronectidae,Platichthys,Platichthys flesus,4
+Teleostei,Pleuronectiformes,Scophthalmidae,Lepidorhombus,Lepidorhombus boscii,4
+Teleostei,Pleuronectiformes,Scophthalmidae,Lepidorhombus,Lepidorhombus whiffiagonis,1
+Teleostei,Pleuronectiformes,Scophthalmidae,Scophthalmus,Scophthalmus maximus,12
+Teleostei,Pleuronectiformes,Scophthalmidae,Scophthalmus,Scophthalmus rhombus,87
+Teleostei,Pleuronectiformes,Scophthalmidae,Zeugopterus,Zeugopterus regius,2
+Teleostei,Pleuronectiformes,Soleidae,Buglossidium,Buglossidium luteum,251
+Teleostei,Pleuronectiformes,Soleidae,Dagetichthys,Dagetichthys lusitanicus,1
+Teleostei,Pleuronectiformes,Soleidae,Microchirus,Microchirus ocellatus,3
+Teleostei,Pleuronectiformes,Soleidae,Pegusa,Pegusa lascaris,22
+Teleostei,Pleuronectiformes,Soleidae,Pegusa,Pegusa nasuta,6
+Teleostei,Pleuronectiformes,Soleidae,Pegusa,Sin dato,1
+Teleostei,Pleuronectiformes,Soleidae,Solea,Solea aegyptiaca,34
+Teleostei,Pleuronectiformes,Soleidae,Solea,Solea senegalensis,103
+Teleostei,Pleuronectiformes,Soleidae,Solea,Solea solea,44
+Teleostei,Pleuronectiformes,Soleidae,Synapturichthys,Synapturichthys kleinii,34
+Teleostei,Salmoniformes,Salmonidae,Salmo,Salmo trutta,1
+Teleostei,Salmoniformes,Salmonidae,Sin dato,Sin dato,2
+Teleostei,Scombriformes,Centrolophidae,Centrolophus,Centrolophus niger,11
+Teleostei,Scombriformes,Centrolophidae,Schedophilus,Schedophilus ovalis,5
+Teleostei,Scombriformes,Nomeidae,Psenes,Psenes pellucidus,1
+Teleostei,Scombriformes,Pomatomidae,Pomatomus,Pomatomus saltatrix,12
+Teleostei,Scombriformes,Scombridae,Auxis,Auxis rochei,7
+Teleostei,Scombriformes,Scombridae,Auxis,Auxis thazard,1
+Teleostei,Scombriformes,Scombridae,Euthynnus,Euthynnus alletteratus,22
+Teleostei,Scombriformes,Scombridae,Orcynopsis,Orcynopsis unicolor,1
+Teleostei,Scombriformes,Scombridae,Sarda,Sarda sarda,8
+Teleostei,Scombriformes,Scombridae,Scomber,Scomber colias,15
+Teleostei,Scombriformes,Scombridae,Scomber,Scomber scombrus,4
+Teleostei,Scombriformes,Scombridae,Scomberomorus,Scomberomorus commerson,63
+Teleostei,Scombriformes,Scombridae,Sin dato,Sin dato,115
+Teleostei,Scombriformes,Scombridae,Thunnus,Sin dato,16
+Teleostei,Scombriformes,Scombridae,Thunnus,Thunnus alalunga,1
+Teleostei,Scombriformes,Scombridae,Thunnus,Thunnus thynnus,34
+Teleostei,Scombriformes,Stromateidae,Pampus,Pampus argenteus,1
+Teleostei,Scombriformes,Stromateidae,Stromateus,Stromateus fiatola,5
+Teleostei,Scombriformes,Tetragonuridae,Tetragonurus,Tetragonurus cuvieri,1
+Teleostei,Scombriformes,Trichiuridae,Lepidopus,Lepidopus caudatus,2
+Teleostei,Scombriformes,Trichiuridae,Trichiurus,Trichiurus lepturus,1
+Teleostei,Siluriformes,Ariidae,Ariopsis,Ariopsis felis,1
+Teleostei,Siluriformes,Plotosidae,Plotosus,Plotosus lineatus,235
+Teleostei,Stomiiformes,Phosichthyidae,Polymetme,Polymetme corythaeola,1
+Teleostei,Stomiiformes,Sternoptychidae,Maurolicus,Sin dato,1
+Teleostei,Stomiiformes,Stomiidae,Borostomias,Borostomias antarcticus,1
+Teleostei,Stomiiformes,Stomiidae,Borostomias,Sin dato,1
+Teleostei,Stomiiformes,Stomiidae,Chauliodus,Chauliodus sloani,1
+Teleostei,Stomiiformes,Stomiidae,Sin dato,Sin dato,7
+Teleostei,Syngnathiformes,Centriscidae,Macroramphosus,Macroramphosus scolopax,2
+Teleostei,Syngnathiformes,Fistulariidae,Fistularia,Fistularia commersonii,330
+Teleostei,Syngnathiformes,Fistulariidae,Fistularia,Fistularia petimba,40
+Teleostei,Syngnathiformes,Syngnathidae,Hippocampus,Hippocampus fuscus,4
+Teleostei,Syngnathiformes,Syngnathidae,Hippocampus,Hippocampus guttulatus,106
+Teleostei,Syngnathiformes,Syngnathidae,Hippocampus,Hippocampus hippocampus,223
+Teleostei,Syngnathiformes,Syngnathidae,Hippocampus,Hippocampus kuda,1
+Teleostei,Syngnathiformes,Syngnathidae,Nerophis,Nerophis lumbriciformis,13
+Teleostei,Syngnathiformes,Syngnathidae,Nerophis,Nerophis maculatus,8
+Teleostei,Syngnathiformes,Syngnathidae,Nerophis,Nerophis ophidion,1
+Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Sin dato,4
+Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Syngnathus abaster,34
+Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Syngnathus acus,1
+Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Syngnathus rostellatus,1
+Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Syngnathus tenuirostris,27
+Teleostei,Syngnathiformes,Syngnathidae,Syngnathus,Syngnathus typhle,51
+Teleostei,Tetraodontiformes,Balistidae,Balistes,Balistes capriscus,50
+Teleostei,Tetraodontiformes,Balistidae,Odonus,Odonus niger,1
+Teleostei,Tetraodontiformes,Diodontidae,Chilomycterus,Chilomycterus reticulatus,2
+Teleostei,Tetraodontiformes,Diodontidae,Diodon,Diodon hystrix,4
+Teleostei,Tetraodontiformes,Molidae,Mola,Mola mola,468
+Teleostei,Tetraodontiformes,Monacanthidae,Aluterus,Aluterus monoceros,2
+Teleostei,Tetraodontiformes,Monacanthidae,Stephanolepis,Stephanolepis diaspros,154
+Teleostei,Tetraodontiformes,Monacanthidae,Stephanolepis,Stephanolepis hispida,1
+Teleostei,Tetraodontiformes,Ostraciidae,Acanthostracion,Acanthostracion polygonium,1
+Teleostei,Tetraodontiformes,Ostraciidae,Ostracion,Ostracion cubicum,10
+Teleostei,Tetraodontiformes,Tetraodontidae,Arothron,Arothron hispidus,2
+Teleostei,Tetraodontiformes,Tetraodontidae,Lagocephalus,Lagocephalus guentheri,60
+Teleostei,Tetraodontiformes,Tetraodontidae,Lagocephalus,Lagocephalus lagocephalus,1
+Teleostei,Tetraodontiformes,Tetraodontidae,Lagocephalus,Lagocephalus sceleratus,235
+Teleostei,Tetraodontiformes,Tetraodontidae,Lagocephalus,Lagocephalus suezensis,130
+Teleostei,Tetraodontiformes,Tetraodontidae,Sphoeroides,Sphoeroides pachygaster,17
+Teleostei,Tetraodontiformes,Tetraodontidae,Torquigener,Torquigener flavimaculosus,355
+Teleostei,Tetraodontiformes,Triacanthidae,Triacanthus,Triacanthus biaculeatus,2
+Teleostei,Zeiformes,Zeidae,Zeus,Zeus faber,27
